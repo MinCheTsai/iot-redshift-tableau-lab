@@ -1,0 +1,20 @@
+{
+  "name": "io_t&tableau",
+  "version": "0.1.0",
+  "bin": {
+    "io_t&tableau": "bin/io_t&tableau.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.72.0",
+    "aws-cdk": "1.72.0",
+    "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "1.72.0"
+  }
+}
