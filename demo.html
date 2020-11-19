@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="https://online.tableau.com/javascripts/api/tableau-2.min.js"></script>
+  </head>
+  <style>
+    #vizContainer {
+      width: 900px;
+      height: 400px;
+    }
+  </style>
+  <body>
+    <div id="vizContainer"></div>
+    <script>
+      function initViz() {
+        var containerDiv = document.getElementById('vizContainer'),
+        url = 'https://prod-apnortheast-a.online.tableau.com/t/softchef/views/FromRedshift/1_1?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link'
+        var viz = new tableau.Viz(containerDiv, url, {
+          hideTabs: true,
+          hideToolbar: true
+        });
+      }
+      window.onload = function() {
+        initViz();
+      }
+    </script>
+  </body>
+</html>
