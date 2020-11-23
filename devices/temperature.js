@@ -3,7 +3,7 @@ const awsIot = require('aws-iot-device-sdk')
 const rc = require('rc')('aws')
 const { random, round } = require('lodash')
 
-const AWS_PROFILE = 'miap'
+const AWS_PROFILE = 'YOUR AWS PROFILE(CLI)'
 const AWS_REGION = (rc[`profile ${AWS_PROFILE}`] || rc[AWS_PROFILE])['region']
 
 AWS.config.credentials = new AWS.SharedIniFileCredentials({
